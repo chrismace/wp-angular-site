@@ -1,1 +1,14 @@
 <p>This is the about view.</p>
+<button class="btn btn-primary" ng-click="onButtonClick()">Button</button>
+
+<!-- <ul>
+<li ng-repeat="band in bands">{{band.name}}<p>{{band.album}}</p></li>
+</ul> -->
+
+<ul>
+<li ng-repeat="result in results | limitTo:quantity">
+<p>ID: {{result.id}}</p>
+<p>{{result.title}}</p>
+<p><img ng-src="{{result.thumbnailUrl}}"/></p>
+</li>
+</ul>
